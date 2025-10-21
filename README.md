@@ -22,10 +22,22 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 ### Update Personal Information
 
 1. **Name and Title**: Edit the hero section in `index.html`
-2. **About Section**: Update the about text with your own story
-3. **Projects**: Replace the placeholder projects with your own work
-4. **Skills**: Modify the skill categories and items to match your expertise
-5. **Social Links**: Update the social media links in the contact section
+2. **Profile Picture**: Replace `images/profile.svg` with your own photo (recommended: 400x400px, JPG or PNG)
+3. **About Section**: Update the about text with your own story
+4. **Projects**: Replace the placeholder projects with your own work
+5. **Skills**: Modify the skill categories and items to match your expertise
+6. **Social Links**: Update the social media links in the contact section
+
+### Add Your Profile Picture
+
+To add your own headshot or profile picture:
+
+1. Save your photo as `images/profile.jpg` or `images/profile.png`
+2. Recommended size: 400x400 pixels (square format works best)
+3. Update the image path in `index.html` if using a different filename:
+   ```html
+   <img src="images/profile.jpg" alt="Profile picture" class="profile-image">
+   ```
 
 ### Customize Colors
 

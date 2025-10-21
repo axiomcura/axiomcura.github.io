@@ -187,6 +187,32 @@ body {
 .about-content {
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.profile-image-container {
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-lg);
+    border: 5px solid var(--primary-color);
+    transition: var(--transition);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 1;
 }
 
 .about-text p {
@@ -381,6 +407,16 @@ body {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
     }
 
     .projects-grid,
