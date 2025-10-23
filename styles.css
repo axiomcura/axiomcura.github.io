@@ -508,6 +508,13 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
+/* Embedded contact when moved inside About */
+.contact-embedded {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
 /* Footer */
 .footer {
     background-color: var(--text-color);
@@ -522,6 +529,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
