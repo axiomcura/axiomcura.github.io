@@ -224,8 +224,8 @@ body {
 }
 
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: var(--shadow-lg);
@@ -368,6 +368,8 @@ body {
     border-radius: 0.5rem;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -395,6 +397,7 @@ body {
 .project-links {
     display: flex;
     gap: 1rem;
+    margin-top: auto;
 }
 
 .project-link {
@@ -626,4 +629,90 @@ body {
         padding: 0.6rem 1.5rem;
         font-size: 0.9rem;
     }
+}
+/* Software Section Specifics */
+.software-logo-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
+    font-size: 3rem;
+    transition: var(--transition);
+}
+
+.project-card:hover .software-logo-placeholder {
+    background-color: #e5e7eb;
+    color: var(--primary-color);
+}
+
+/* Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Software Logo Styles */
+.software-logo-container {
+    width: 100%;
+    height: 150px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.software-logo {
+    max-width: 96%;
+    max-height: 96%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .software-logo {
+    transform: scale(1.1);
+}
+
+.project-card:hover .software-logo-container {
+    background-color: transparent;
+}
+
+/* Publication Item Header Styles */
+.publication-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.publication-item h3 a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.publication-item h3 a:hover {
+    color: var(--primary-color);
+}
+
+/* Section Description */
+.section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: -2rem auto 3rem;
+    color: var(--text-light);
+    font-size: 1.1rem;
 }
