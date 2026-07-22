@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "title": "Erik Serrano | Computational Biology Portfolio",
+    "description": "Erik Serrano is a postdoctoral researcher at KTH Royal Institute of Technology using computational tools to understand biology through image-based profiling, reproducible scientific software, and open science."
+  },
+  "navigation": [
+    {
+      "label": "About",
+      "url": "#about"
+    },
+    {
+      "label": "Research",
+      "url": "#research"
+    },
+    {
+      "label": "Software",
+      "url": "#software"
+    },
+    {
+      "label": "Publications",
+      "url": "#publications"
+    },
+    {
+      "label": "Skills",
+      "url": "#skills"
+    },
+    {
+      "label": "Education",
+      "url": "#education"
+    },
+    {
+      "label": "Contact",
+      "url": "#contact"
+    }
+  ],
+  "profile": {
+    "name": "Erik Serrano",
+    "role": "Postdoctoral Researcher",
+    "institution": "KTH Royal Institute of Technology",
+    "location": "Stockholm, Sweden",
+    "tagline": "Computational biologist and scientific software developer focused on image-based profiling.",
+    "summary": "I use computational tools to understand biology and build reproducible, open-source software that helps researchers turn large-scale cellular imaging experiments into interpretable biological insight.",
+    "image": {
+      "src": "images/profile.png",
+      "alt": "Portrait of Erik Serrano"
+    },
+    "primaryAction": {
+      "label": "View Publications",
+      "url": "#publications"
+    },
+    "secondaryAction": {
+      "label": "Download CV",
+      "url": "documents/Erik-Serrano-CV-September-2025.pdf",
+      "external": true
+    }
+  },
+  "about": {
+    "paragraphs": [
+      "I am a postdoctoral researcher at KTH Royal Institute of Technology in Sweden, working at the intersection of computational biology, image-based profiling, and open-source scientific software.",
+      "My research centers on using computational tools to understand cellular biology from high-dimensional morphology data. I care deeply about software that is transparent, scalable, easy to use, and useful to other scientists long after a single project ends.",
+      "Before joining KTH, I completed doctoral training in Computational Bioscience at the University of Colorado Anschutz Medical Campus, where I contributed to open tools for cytomining and large-scale biological data analysis."
+    ],
+    "details": [
+      {
+        "label": "Current role",
+        "value": "Postdoctoral Researcher"
+      },
+      {
+        "label": "Institution",
+        "value": "KTH Royal Institute of Technology"
+      },
+      {
+        "label": "Location",
+        "value": "Stockholm, Sweden"
+      },
+      {
+        "label": "Focus",
+        "value": "Computational biology and scientific software"
+      }
+    ]
+  },
+  "focusAreas": [
+    {
+      "label": "Image-based profiling",
+      "title": "Cellular morphology at scale",
+      "description": "Developing computational approaches that make large high-content imaging datasets easier to analyze, compare, and interpret biologically."
+    },
+    {
+      "label": "Reproducibility",
+      "title": "Open scientific software",
+      "description": "Building open-source, documented, tested, and easy-to-use tools for collaborative computational biology research."
+    },
+    {
+      "label": "Data systems",
+      "title": "Harmonized biological data",
+      "description": "Designing scalable approaches for transforming single-cell and profiling data into reliable research-ready formats."
+    }
+  ],
+  "software": {
+    "description": "Open-source, easy-to-use tools and contributions supporting image-based profiling, cytomining, and biological data analysis.",
+    "items": [
+      {
+        "name": "pycytominer",
+        "description": "Efficient processing of high-dimensional readouts from high-throughput cell experiments.",
+        "logo": "images/software-logos/Pycytominer-logo.svg",
+        "links": [
+          {
+            "label": "DOI",
+            "url": "https://doi.org/10.1038/s41592-025-02611-8",
+            "external": true
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/cytomining/pycytominer",
+            "external": true
+          }
+        ]
+      },
+      {
+        "name": "Copairs-mAP",
+        "description": "A versatile information retrieval framework for evaluating profile strength and similarity.",
+        "logo": "images/software-logos/Copairs-mAP-logo.png",
+        "links": [
+          {
+            "label": "DOI",
+            "url": "https://doi.org/10.1038/s41467-025-60306-2",
+            "external": true
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/cytomining/copairs",
+            "external": true
+          }
+        ]
+      },
+      {
+        "name": "CytoTable",
+        "description": "Scalable data harmonization for single-cell image-based profiling.",
+        "logo": "images/software-logos/CytoTable-logo.svg",
+        "links": [
+          {
+            "label": "DOI",
+            "url": "https://doi.org/10.1016/j.patter.2026.101514",
+            "external": true
+          },
+          {
+            "label": "GitHub",
+            "url": "https://github.com/cytomining/CytoTable",
+            "external": true
+          }
+        ]
+      },
+      {
+        "name": "Buscar",
+        "description": "Framework that leverages single-cell image-based profiles to identify hits in high-content drug screens.",
+        "logo": "images/software-logos/buscar-logo.svg",
+        "links": [
+          {
+            "label": "GitHub",
+            "url": "https://github.com/WayScience/buscar",
+            "external": true
+          }
+        ]
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Progress and new challenges in image-based profiling",
+      "authors": "Serrano, E., Peters, J., Wagner, J., Graham, R. E., Chen, Z., Feng, B., Miranda, G., Kalinin, A. A., Vulliard, L., Tomkinson, J., Mattson, C., Lippincott, M. J., Kang, Z., Sitani, D., Bunten, D., Seal, S., Carragher, N. O., Carpenter, A. E., Singh, S., and Way, G. P.",
+      "venue": "Molecular Systems Biology, 22, 624-658, 2026",
+      "url": "https://link.springer.com/article/10.1038/s44320-026-00197-7"
+    },
+    {
+      "title": "Reproducible image-based profiling with Pycytominer",
+      "authors": "Serrano, E., Chandrasekaran, S. N., Bunten, D., Brewer, K. I., Tomkinson, J., Kern, R., Bornholdt, M., Fleming, S. J., Pei, R., Arevalo, J., Tsang, H., Rubinetti, V., Tromans-Coia, C., Becker, T., Weisbart, E., Bunne, C., Kalinin, A. A., Senft, R., Taylor, S. J., and Way, G. P.",
+      "venue": "Nature Methods, 22(4), 677-680, 2025",
+      "url": "https://www.nature.com/articles/s41592-025-02611-8"
+    },
+    {
+      "title": "A versatile information retrieval framework for evaluating profile strength and similarity",
+      "authors": "Kalinin, A. A., Arevalo, J., Serrano, E., Vulliard, L., Tsang, H., Bornholdt, M., Munoz, A. F., Sivagurunathan, S., Rajwa, B., Carpenter, A. E., Way, G. P., and Singh, S.",
+      "venue": "Nature Communications, 16(1), 5181, 2025",
+      "url": "https://www.nature.com/articles/s41467-025-60306-2"
+    },
+    {
+      "title": "Scalable data harmonization for single-cell image-based profiling with CytoTable",
+      "authors": "Bunten, D., Tomkinson, J., Serrano, E., Lippincott, M. J., Brewer, K. I., Rubinetti, V., Alquaddoomi, F., and Way, G. P.",
+      "venue": "Patterns, 7(5), 101514, 2026",
+      "url": "https://www.cell.com/patterns/fulltext/S2666-3899(26)00023-1"
+    }
+  ],
+  "publicationLinks": [
+    {
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/scholar?q=Erik+Serrano+pycytominer+image-based+profiling",
+      "external": true
+    }
+  ],
+  "skills": [
+    {
+      "title": "Programming",
+      "items": [
+        "Python",
+        "Rust",
+        "R",
+        "Scientific Python",
+        "Package development"
+      ]
+    },
+    {
+      "title": "Data Science",
+      "items": [
+        "Pandas",
+        "Polars",
+        "NumPy",
+        "SciPy",
+        "scikit-learn",
+        "PyTorch"
+      ]
+    },
+    {
+      "title": "Research Methods",
+      "items": [
+        "Image-based profiling",
+        "Single-cell data",
+        "Cytomining",
+        "Biological interpretation",
+        "Reproducible analysis"
+      ]
+    },
+    {
+      "title": "Engineering",
+      "items": [
+        "Git",
+        "GitHub",
+        "GitHub Actions",
+        "Docker",
+        "Testing",
+        "Documentation"
+      ]
+    },
+    {
+      "title": "Visualization",
+      "items": [
+        "ggplot",
+        "seaborn",
+        "matplotlib",
+        "plotly"
+      ]
+    },
+    {
+      "title": "Languages",
+      "description": "Fluent in English and Spanish; intermediate Portuguese (Brazilian)."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Colorado Anschutz Medical Campus",
+      "degree": "PhD, Computational Bioscience",
+      "location": "Aurora, Colorado",
+      "dates": "2021-2026"
+    },
+    {
+      "institution": "University of California, Northridge",
+      "degree": "BS, Biology; Minor in Chemistry",
+      "location": "Northridge, California",
+      "dates": "2017-2020"
+    },
+    {
+      "institution": "Los Angeles Valley College",
+      "degree": "AS, Health Sciences",
+      "location": "Valley Glen, California",
+      "dates": "2012-2017"
+    }
+  ],
+  "contact": {
+    "copy": "I am open to conversations about computational biology, image-based profiling, open-source software, postdoctoral collaborations, and research opportunities.",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/axiomcura",
+        "external": true
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/erik-serrano-0673a2133/",
+        "external": true
+      }
+    ]
+  }
+}

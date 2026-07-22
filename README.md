@@ -1,74 +1,43 @@
 # axiomcura.github.io
 
-Personal portfolio website built with HTML, CSS, and JavaScript.
+Personal portfolio website for Erik Serrano.
 
-## Features
+## How to Update Content
 
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Modern UI**: Clean and professional design with smooth animations
-- **Easy to Customize**: Simple structure makes it easy to update content
-- **Fast Loading**: Lightweight with minimal dependencies
+Most site content is managed in [`data/site.json`](data/site.json):
 
-## Sections
+- `profile`: name, title, institution, location, short summary, portrait, and CV link
+- `about`: biography paragraphs and quick facts
+- `focusAreas`: current research themes
+- `software`: software projects, logos, descriptions, and links
+- `publications`: publication titles, authors, venues, and URLs
+- `skills`: technical skill groups
+- `education`: degree history
+- `contact`: contact text and links
 
-- **Hero**: Eye-catching introduction with call-to-action buttons
-- **About**: Personal introduction and background
-- **Projects**: Showcase of your work with links to GitHub and demos
-- **Skills**: Display of technical skills organized by category
-- **Contact**: Social media links and contact information
-
-## Customization
-
-### Update Personal Information
-
-1. **Name and Title**: Edit the hero section in `index.html`
-2. **Profile Picture**: Replace `images/profile.svg` with your own photo (recommended: 400x400px, JPG or PNG)
-3. **About Section**: Update the about text with your own story
-4. **Projects**: Replace the placeholder projects with your own work
-5. **Skills**: Modify the skill categories and items to match your expertise
-6. **Social Links**: Update the social media links in the contact section
-
-### Add Your Profile Picture
-
-To add your own headshot or profile picture:
-
-1. Save your photo as `images/profile.jpg` or `images/profile.png`
-2. Recommended size: 400x400 pixels (square format works best)
-3. Update the image path in `index.html` if using a different filename:
-   ```html
-   <img src="images/profile.jpg" alt="Profile picture" class="profile-image">
-   ```
-
-### Customize Colors
-
-Edit the CSS variables in `styles.css`:
-
-```css
-:root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --text-light: #6b7280;
-    --bg-color: #ffffff;
-    --bg-alt: #f9fafb;
-}
-```
-
-## Deployment
-
-This website is automatically deployed via GitHub Pages. Any push to the main branch will update the live site at https://axiomcura.github.io
+After editing the JSON file, run the site from a local server so the browser can load `data/site.json`.
 
 ## Local Development
 
-Simply open `index.html` in your web browser to view the site locally. No build process required!
+```bash
+python3 -m http.server 8000
+```
 
-## Technologies Used
+Then open:
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Font Awesome (for icons)
+```text
+http://127.0.0.1:8000
+```
 
-## License
+## Files
 
-Feel free to use this template for your own personal website!
+- [`index.html`](index.html): semantic page structure
+- [`styles.css`](styles.css): responsive blue professional theme
+- [`script.js`](script.js): renders the site from `data/site.json`
+- [`data/site.json`](data/site.json): editable portfolio content
+- [`images/`](images): profile image and software logos
+- [`documents/`](documents): CV and supporting documents
+
+## Deployment
+
+This repository is designed for GitHub Pages. Push changes to the publishing branch configured in GitHub Pages to update the live site.

@@ -4,295 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website and portfolio">
-    <meta name="author" content="Axiomcura">
-    <title>Erik Serrano - Portfolio</title>
+    <meta name="description" content="Erik Serrano, postdoctoral researcher in computational biology and reproducible scientific software.">
+    <meta name="author" content="Erik Serrano">
+    <meta name="theme-color" content="#0f5fa8">
+    <meta property="og:title" content="Erik Serrano | Computational Biology Portfolio">
+    <meta property="og:description" content="Postdoctoral researcher at KTH Royal Institute of Technology working on image-based profiling, open science, and scientific software.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/profile.png">
+    <title>Erik Serrano | Computational Biology Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Erik Serrano</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#software">Software</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Erik Serrano</span></h1>
-                <p class="subtitle">Computational biologist | Software developer</p>
-                <p class="description">Welcome to my personal website. Explore my work and get in touch!</p>
-                <div class="cta-buttons">
-                    <a href="#publications" class="btn btn-primary">View Publications</a>
-                    <a href="documents/Erik-Serrano-CV-September-2025.pdf" target="_blank" class="btn btn-cv">
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="container nav-inner">
+                <a class="logo" href="#" data-site-name>Erik Serrano</a>
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" data-nav-links></ul>
+            </div>
+        </nav>
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow" data-hero-eyebrow>Postdoctoral Researcher</p>
+                    <h1 id="hero-title" data-hero-title>Erik Serrano</h1>
+                    <p class="hero-subtitle" data-hero-subtitle></p>
+                    <p class="hero-summary" data-hero-summary></p>
+                    <div class="hero-actions" data-hero-actions></div>
+                </div>
+                <div class="hero-media" aria-label="Portrait">
+                    <img data-profile-image src="images/profile.png" alt="Portrait of Erik Serrano">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content reveal">
-                <div class="profile-image-container">
-                    <img src="images/profile.png" alt="Profile picture" class="profile-image">
+    <main id="main">
+        <section id="about" class="section">
+            <div class="container section-grid">
+                <div>
+                    <p class="section-kicker">About</p>
+                    <h2 class="section-title">Computational biology, built for reuse</h2>
                 </div>
-                <div class="about-text">
-                    <p>I'm a fifth-year PhD student in Computational Bioscience at the University of Colorado Anschutz
-                        Medical Campus. My research centers on developing reproducible software for processing and
-                        analyzing image-based profiles, enabling large-scale and interpretable insights into cellular
-                        morphology. I have a strong background in software development, data analysis, and computational
-                        biology, and I’m passionate about creating open, collaborative tools that promote reproducible
-                        science. I’m preparing to defend my dissertation in the spring and am currently seeking
-                        post-graduation opportunities that combine computational biology, open science, and data-driven
-                        discovery.</p>
-                    <p>Outside of research, I love hiking, learning new languages, reading, and dancing.</p>
-                </div>
+                <div class="section-body" data-about></div>
             </div>
-            <!-- Embedded Contact (moved from bottom) -->
-            <div id="contact" class="contact-embedded">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-content">
-                    <p class="contact-text">
-                        I'm always open to new opportunities and collaborations.
-                        Feel free to reach out if you'd like to connect!
-                    </p>
-                    <p class="contact-email">
-                        <i class="fas fa-envelope"></i> erik.serrano{at}cuanschutz.edu
-                    </p>
-                    <div class="social-links">
-                        <a href="https://github.com/axiomcura" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/erik-serrano-0673a2133/" target="_blank"
-                            class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <!-- <a href="#" target="_blank" class="social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a> -->
-                        <a href="mailto:erik.serrano@cuanschutz.edu" class="social-link" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
+        </section>
+
+        <section id="research" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Research</p>
+                    <h2 class="section-title">Current Focus</h2>
                 </div>
+                <div class="focus-grid" data-focus-areas></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-timeline">
-                <div class="education-item reveal">
-                    <div class="education-header">
-                        <h3>University of Colorado, Anschutz Medical Campus</h3>
-                        <span class="location">Aurora, Colorado</span>
-                    </div>
-                    <div class="education-details">
-                        <p class="degree">PhD. Computational Bioscience</p>
-                        <p class="duration">September 2021 - May 2026</p>
-                    </div>
+        <section id="software" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Software</p>
+                    <h2 class="section-title">Open-Source Contributions</h2>
+                    <p class="section-description" data-software-description></p>
                 </div>
-                <div class="education-item reveal">
-                    <div class="education-header">
-                        <h3>University of California, Northridge</h3>
-                        <span class="location">Northridge, California</span>
-                    </div>
-                    <div class="education-details">
-                        <p class="degree">B.S in Biology; Minor in Chemistry</p>
-                        <p class="duration">September 2017 - May 2020</p>
-                    </div>
-                </div>
-                <div class="education-item reveal">
-                    <div class="education-header">
-                        <h3>Los Angeles Valley College</h3>
-                        <span class="location">Valley Glen, California</span>
-                    </div>
-                    <div class="education-details">
-                        <p class="degree">AS in Health Sciences</p>
-                        <p class="duration">December 2012 - May 2017</p>
-                    </div>
-                </div>
+                <div class="card-grid" data-software></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Software Section -->
-    <section id="software" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Software contributions</h2>
-            <p class="section-description">Here is a collection of open-source software tools I have developed or contributed to, designed to advance image-based profiling and biological data analysis.</p>
-            <div class="projects-grid">
-                <!-- pycytominer -->
-                <div class="project-card reveal">
-                    <div class="software-logo-container">
-                        <img src="images/software-logos/Pycytominer-logo.svg" alt="pycytominer logo" class="software-logo">
-                    </div>
-                    <h3>pycytominer</h3>
-                    <p>Efficient processing of high-dimensional readouts from high-throughput cell experiments.</p>
-                    <div class="project-links">
-                        <a href="https://doi.org/10.1038/s41592-025-02611-8" target="_blank" class="project-link">
-                            <i class="fas fa-book"></i> DOI
-                        </a>
-                        <a href="https://github.com/cytomining/pycytominer" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
+        <section id="publications" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Publications</p>
+                    <h2 class="section-title">Selected Work</h2>
                 </div>
-
-                <!-- Copairs-mAP -->
-                <div class="project-card reveal">
-                    <div class="software-logo-container">
-                        <img src="images/software-logos/Copairs-mAP-logo.png" alt="Copairs-mAP logo" class="software-logo">
-                    </div>
-                    <h3>Copairs-mAP</h3>
-                    <p>A versatile information retrieval framework for evaluating profile strength and similarity.</p>
-                    <div class="project-links">
-                        <a href="https://doi.org/10.1038/s41467-025-60306-2" target="_blank" class="project-link">
-                            <i class="fas fa-book"></i> DOI
-                        </a>
-                        <a href="https://github.com/cytomining/copairs" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- CytoTable -->
-                <div class="project-card reveal">
-                    <div class="software-logo-container">
-                        <img src="images/software-logos/CytoTable-logo.svg" alt="CytoTable logo" class="software-logo">
-                    </div>
-                    <h3>CytoTable</h3>
-                    <p>Scalable data harmonization for single-cell image-based profiling.</p>
-                    <div class="project-links">
-                        <a href="https://doi.org/10.1101/2025.06.19.660613" target="_blank" class="project-link">
-                            <i class="fas fa-book"></i> DOI
-                        </a>
-                        <a href="https://github.com/cytomining/CytoTable" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Buscar -->
-                <div class="project-card reveal">
-                    <div class="software-logo-container">
-                        <img src="images/software-logos/buscar-logo.svg" alt="Buscar logo" class="software-logo">
-                    </div>
-                    <h3>Buscar</h3>
-                    <p>Framework that leverages single-cell image-based profiles to identify hits in high-content drug screens.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/WayScience/buscar" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
+                <div class="publication-list" data-publications></div>
+                <div class="publication-actions" data-publication-links></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="section">
-        <div class="container">
-            <h2 class="section-title">Publications</h2>
-            <div class="publications-list">
-                <div class="publication-item reveal">
-                    <h3><a href="https://arxiv.org/abs/2508.05800" target="_blank">Progress and new challenges in image-based profiling</a></h3>
-                    <p><strong>Serrano, E.,</strong> Peters, J., Wagner, J., Graham, R. E., Chen, Z., Feng, B., Miranda, G., Kalinin, A. A., Vulliard, L., Tomkinson, J., Mattson, C., Lippincott, M. J., Kang, Z., Sitani, D., Bunten, D., Seal, S., Carragher, N. O., Carpenter, A. E., Singh, S., … Way, G. P. (2025). In <em>arXiv [q-bio.QM]</em>. arXiv.</p>
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Skills</p>
+                    <h2 class="section-title">Technical Strengths</h2>
                 </div>
-                <div class="publication-item reveal">
-                    <h3><a href="https://www.nature.com/articles/s41592-025-02611-8" target="_blank">Reproducible image-based profiling with Pycytominer</a></h3>
-                    <p><strong>Serrano, E.,</strong> Chandrasekaran, S. N., Bunten, D., Brewer, K. I., Tomkinson, J., Kern, R., Bornholdt, M., Fleming, S. J., Pei, R., Arevalo, J., Tsang, H., Rubinetti, V., Tromans-Coia, C., Becker, T., Weisbart, E., Bunne, C., Kalinin, A. A., Senft, R., Taylor, S. J., … Way, G. P. (2025). <em>Nature Methods</em>, <em>22</em>(4), 677–680.</p>
-                </div>
-                <div class="publication-item reveal">
-                    <h3><a href="https://www.nature.com/articles/s41467-025-60306-2" target="_blank">A versatile information retrieval framework for evaluating profile strength and similarity</a></h3>
-                    <p>Kalinin, A. A., Arevalo, J., <strong>Serrano, E.,</strong> Vulliard, L., Tsang, H., Bornholdt, M., Muñoz, A. F., Sivagurunathan, S., Rajwa, B., Carpenter, A. E., Way, G. P., &amp; Singh, S. (2025). <em>Nature Communications</em>, <em>16</em>(1), 5181.</p>
-                </div>
-                <div class="publication-item reveal">
-                    <h3><a href="https://www.biorxiv.org/content/10.1101/2025.06.19.660613v2.abstract" target="_blank">Scalable data harmonization for single-cell image-based profiling with CytoTable</a></h3>
-                    <p>Bunten, D., Tomkinson, J., <strong>Serrano, E.,</strong> Lippincott, M. J., Brewer, K. I., Rubinetti, V., Alquaddoomi, F., &amp; Way, G. P. (2025). In <em>bioRxiv</em>.</p>
-                </div>
-                <div class="publication-item reveal">
-                    <h3><a href="https://www.nature.com/articles/s41565-025-01867-7" target="_blank">Systemic HER3 ligand-mimicking nanobioparticles enter the brain and reduce intracranial tumour growth</a></h3>
-                    <p>Alonso-Valenteen, F., Mikhael, S., Wang, H., Sims, J., Taguiam, M., Teh, J., Sances, S., Wong, M., Miao, T., Srinivas, D., Gonzalez-Almeyda, N., Cho, R. H., Sanchez, R., Nguyenle, K., <strong>Serrano, E.</strong>, Ondatje, B., Benhaghnazar, R. L., Gray, H. B., Gross, Z., … Medina-Kauwe, L. K. (2025). <em>Nature Nanotechnology</em>, <em>20</em>(5), 683–696.</p>
-                </div>
-                <div class="publication-item reveal">
-                    <h3><a href="https://www.sciencedirect.com/science/article/abs/pii/S1876162321000821" target="_blank">Development of enhanced conformational sampling methods to probe the activation landscape of GPCRs</a></h3>
-                    <p>Abrol, R., <strong>Serrano, E.,</strong> &amp; Santiago, L. J. (2022). <em>Advances in Protein Chemistry and Structural Biology</em>, <em>128</em>, 325–359.</p>
-                </div>
-                <div class="publication-item reveal">
-                    <h3><a href="https://journals.asm.org/doi/full/10.1128/aem.01487-21" target="_blank">Utilization efficiency of human milk oligosaccharides by human-associated Akkermansia is strain dependent</a></h3>
-                    <p>Luna, E., Parkar, S. G., Kirmiz, N., Hartel, S., Hearn, E., Hossine, M., Kurdian, A., Mendoza, C., Orr, K., Padilla, L., Ramirez, K., Salcedo, P., <strong>Serrano, E.,</strong> Choudhury, B., Paulchakrabarti, M., Parker, C. T., Huynh, S., Cooper, K., &amp; Flores, G. E. (2022). <em>Applied and Environmental Microbiology</em>, <em>88</em>(1), e0148721.</p>
-                </div>
+                <div class="skill-grid" data-skills></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category reveal">
-                    <h3><i class="fas fa-language"></i> Languages</h3>
-                    <p class="skill-description">Fluent in English, Spanish, and intermediate in Portuguese (BR)</p>
+        <section id="education" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Education</p>
+                    <h2 class="section-title">Academic Background</h2>
                 </div>
-                <div class="skill-category reveal">
-                    <h3><i class="fas fa-code"></i> Programming Languages (Expert)</h3>
-                    <ul class="skill-list">
-                        <li>Python</li>
-                        <li>Rust</li>
-                        <li>R</li>
-                    </ul>
-                </div>
-                <div class="skill-category reveal">
-                    <h3><i class="fas fa-tools"></i> Software & Technical Skills</h3>
-                    <ul class="skill-list">
-                        <li><strong>Version Control:</strong> Git, GitHub</li>
-                        <li><strong>DevOps & CI/CD:</strong> GitHub Actions, Docker</li>
-                        <li><strong>Data Analysis & Scientific Computing:</strong> Pandas/Polars, NumPy, SciPy,
-                            scikit-learn, PyTorch</li>
-                        <li><strong>Workflow Managers:</strong> Snakemake, Nextflow</li>
-                        <li><strong>Data Visualization:</strong> ggplot, seaborn, matplotlib, plotly</li>
-                    </ul>
-                </div>
+                <div class="timeline" data-education></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact section moved into About -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-panel">
+                <div>
+                    <p class="section-kicker">Contact</p>
+                    <h2 class="section-title">Collaborate or Connect</h2>
+                    <p class="contact-copy" data-contact-copy></p>
+                </div>
+                <div class="contact-actions" data-contact-actions></div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025. All rights reserved.</p>
+        <div class="container footer-inner">
+            <p data-footer></p>
+            <a href="#" aria-label="Back to top">Back to top</a>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
